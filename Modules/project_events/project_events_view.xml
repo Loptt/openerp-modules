@@ -1,0 +1,43 @@
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_project_events_tree">
+			<field name="name">project.events.tree</field>
+			<field name="model">project.events</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string ="Eventos">
+					<field name="name" select="1" />
+					<field name="description" select="1" />
+					<field name="startdate"/>
+					<field name="length"/>
+					<field name="costamount"/>
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_project_events_form">
+			<field name="name">project.events.form</field>
+			<field name="model">project.events</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Eventos">
+					<field name="name" select="1" />
+					<field name="description" select="1" />
+					<field name="startdate"/>
+					<field name="length"/>
+					<field name="costamount"/>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="open_view_project_events_form">
+			<field name="name">Eventos</field>
+			<field name="res_model">project.events</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem name="Eventos" parent="base.menu_definitions" id="menu_project_events_open_view_form" action="open_view_project_events_form" sequence="10"/>
+
+	</data>
+</openerp>
