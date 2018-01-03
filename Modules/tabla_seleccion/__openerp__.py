@@ -7,8 +7,8 @@
     "description": "Modulo para crear relaciones de tablas.",
     "depends" : ["product"],
     "init_xml" : [],
-    "update_xml" : ["primer_modulo_view.xml"],
-    "data" : [],
+    "update_xml" : ["tabla_seleccion_view.xml", "product_view.xml"],
+    "data" : ["data/tabla_seleccion_data.xml"],
     "active": True,
     "installable": True
 }

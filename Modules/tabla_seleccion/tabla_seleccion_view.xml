@@ -2,7 +2,7 @@
 <openerp>
     <data>
         <record id="view_tabla_seleccion_form" model="ir.ui.view">
-            <field name="name">view.talba.seleccion.form</field>
+            <field name="name">view.tabla.seleccion.form</field>
             <field name="model">tabla.seleccion</field>
             <field name="arch" type="xml">
                 <form string="Seleccion">
@@ -14,7 +14,7 @@
         </record>
 
         <record id="view_tabla_seleccion_tree" model="ir.ui.view">
-            <field name="name">view.talba.seleccion.tree</field>
+            <field name="name">view.tabla.seleccion.tree</field>
             <field name="model">tabla.seleccion</field>
             <field name="arch" type="xml">
                 <tree string="Seleccion">
@@ -33,7 +33,7 @@
         </record>
 
         <menuitem
-            id="tabla_seleccion_menu_item" name="Seleccion Prueba" parent='product.menu_products_category' sequence="50"
+            id="tabla_seleccion_menu_item" name="Seleccion Prueba" parent='base.menu_product' sequence="50"
             action='action_tabla_seleccion'
         />
     </data>
