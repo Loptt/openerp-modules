@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="view_tabla_seleccion_form" model="ir.ui.view">
+            <field name="name">view.talba.seleccion.form</field>
+            <field name="model">tabla.seleccion</field>
+            <field name="arch" type="xml">
+                <form string="Seleccion">
+                    <field name="name"/>
+                    <field name="number"/>
+                    <field name="description"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tabla_seleccion_tree" model="ir.ui.view">
+            <field name="name">view.talba.seleccion.tree</field>
+            <field name="model">tabla.seleccion</field>
+            <field name="arch" type="xml">
+                <tree string="Seleccion">
+                    <field name="name"/>
+                    <field name="number"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_tabla_seleccion" model="ir.actions.act_window">
+            <field name="name">Seleccion Prueba</field>
+            <field name="res_model">tabla.seleccion</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+            id="tabla_seleccion_menu_item" name="Seleccion Prueba" parent='product.menu_products_category' sequence="50"
+            action='action_tabla_seleccion'
+        />
+    </data>
+</openerp>

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+        <record id="tabla_seleccion_abc" model="talba.seleccion">
+            <field name="name">abc</field>
+            <field name="number">1</field>
+            <field name="description">Primer elemento</field>
+        </record>
+    </data>
+    <data>
+        <record id="tabla_seleccion_def" model="talba.seleccion">
+            <field name="name">def</field>
+            <field name="number">2</field>
+            <field name="description">Segundo elemento</field>
+        </record>
+    </data>
+    <data>
+        <record id="tabla_seleccion_ghi" model="talba.seleccion">
+            <field name="name">ghi</field>
+            <field name="number">3</field>
+            <field name="description">Tercer elemento</field>
+        </record>
+    </data>
+    <data>
+        <record id="tabla_seleccion_jkl" model="talba.seleccion">
+            <field name="name">jkl</field>
+            <field name="number">4</field>
+            <field name="description">Cuarto elemento</field>
+        </record>
+    </data>
+    <data>
+        <record id="tabla_seleccion_mno" model="talba.seleccion">
+            <field name="name">mno</field>
+            <field name="number">5</field>
+            <field name="description">Quinto elemento</field>
+        </record>
+    </data>
+</openerp>
